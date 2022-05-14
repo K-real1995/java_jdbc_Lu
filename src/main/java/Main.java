@@ -33,7 +33,7 @@ public class Main {
                     "cars_id INTEGER NOT NULL," +
                     "FOREIGN KEY (users_id) REFERENCES users(id)," +
                     "FOREIGN KEY (cars_id) REFERENCES cars(id));";
-            // Обновляем нашу базу данных db_lu тремя таблицами
+            // Обновляем нашу базу данных db_lu четырьмя таблицами
             Statement statement = connection.createStatement();
             statement.executeUpdate(query);
             statement.executeUpdate(query2);
